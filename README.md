@@ -32,7 +32,8 @@ Progress Roadmap:
 [X] EC2 security remediation
 [X] SNS notifications for security findings
 [X] VPC Flow Logs
-[] Cloudwatch dashboard for monitoring
+[X] Cloudwatch dashboard for monitoring
+[] AI integration for automated security reports
 
 License:
 Distributed under the MIT License. See LICENSE for more information.
