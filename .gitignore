@@ -214,3 +214,9 @@ config
 *.pem
 *.key
 secrets.py
+
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraform.lock.hcl
+*.tfvars
