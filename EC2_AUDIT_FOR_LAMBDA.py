@@ -18,8 +18,10 @@ def lambda_handler(event, context):
                 
                 is_all_traffic = protocol == '-1'
                 has_ssh_port = from_port is not None and from_port <= 22 <= to_port
+                has_rdp_port = from_port is not None and from_port <= 3389 <= to_port
+                has_smb_port = from_port is not None and from_port <= 445 <= to_port
                 
-                if is_all_traffic or has_ssh_port:
+                if is_all_traffic or has_ssh_port or has_rdp_port or has_smb_port:
                     for ip_range in rule.get('IpRanges', []):
                         if ip_range.get('CidrIp') == '0.0.0.0/0':
                             vulnerabilities_found += 1
