@@ -33,7 +33,8 @@ Progress Roadmap:
 [X] SNS notifications for security findings
 [X] VPC Flow Logs
 [X] Cloudwatch dashboard for monitoring
-[] AI integration for automated security reports
+[X] AI integration for automated security reports
+[X] Frontend dashboard displaying security analysis results
 
 License:
 Distributed under the MIT License. See LICENSE for more information.
